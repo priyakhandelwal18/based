@@ -76,8 +76,8 @@ model:
       l_max: ${....datamodule.max_length}
       feature_map: 
         _target_: based.models.mixers.linear_attention.TaylorExp
-        input_dim: 15                    # updated this to match inference kernel
-      feature_dim: 15                    # updated this to match inference kernel
+        input_dim: 16                    
+      feature_dim: 16                    
       num_heads: 8                       # updated this to match inference kernel
       parallel_implementation: "fla_parallel"
 
